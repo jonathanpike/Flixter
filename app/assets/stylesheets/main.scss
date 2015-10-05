@@ -1,9 +1,45 @@
-.navbar .navbar-brand {
+.navbar {
+	box-shadow: 0px 2px 5px #888888;
+	margin: 0;
+
+	.navbar-brand {
 	font-family: 'Fugaz One', cursive;
 	color: #B9090B;
 	font-size: 25px;
+	}
 }
 
-.navbar {
-	box-shadow: 0px 2px 5px #888888;
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+.frosty {
+	background:rgba(0,0,0,0.5);
+	color: white;
+	h1 {
+		font-family: "Helvetica Neue", Helvetica;
+  		font-weight: 100;
+  		text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	}
+
+	h2 {
+		font-family: "Helvetica Neue", Helvetica;
+  		font-weight: 200;
+  		text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	}
+}
+
+.hero {
+	background: url('hero.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+	height: 370px;
+	box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.btn {
+	border-radius:0;
 }
