@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 1.2'
 # Use Bootstrap for Styling
 gem 'bootstrap-sass', '~> 3.3.5'
 
+# Use Devise for Auth
+gem 'devise'
+
+# Use Simple Form for Forms
+gem 'simple_form'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
