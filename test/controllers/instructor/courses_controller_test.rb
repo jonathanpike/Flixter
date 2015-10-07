@@ -1,7 +1,7 @@
 require 'test_helper'
 
-
 class Instructor::CoursesControllerTest < ActionController::TestCase
+include Devise::TestHelpers
   setup do
     @course = courses(:sample)
   end

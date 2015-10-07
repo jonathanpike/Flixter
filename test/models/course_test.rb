@@ -1,12 +1,13 @@
 require 'test_helper'
 
 class CourseTest < ActiveSupport::TestCase
-  test "Course needs valid input" do 
-    course = Course.new
-    assert_not course.save 
+  test "Course saved with valid input" do 
+    course = Course.create(title: 'Course Title', description: 'Course Description', cost: '5')
+    assert course.valid?
   end
 
-  test "Course saved with valid input" do
-    assert_equal 1, Course.count
+  test "Course doesn't save without all parameters" do
+    course = Course.create(title: 'Course Title')
+    assert_not course.valid?
   end
 end
