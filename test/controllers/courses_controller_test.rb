@@ -10,4 +10,9 @@ include Devise::TestHelpers
     get :index
     assert_response :success
   end
+
+  test "Get show" do
+    get :show, id: @course
+    assert_response :success
+  end
 end
