@@ -36,6 +36,15 @@ gem 'devise'
 # Use Simple Form for Forms
 gem 'simple_form'
 
+# Use CarrierWave for Image Uploading
+gem 'carrierwave'
+
+# User Figaro to store credentials
+gem 'figaro'
+
+# Use Fog for S3
+gem 'fog'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
