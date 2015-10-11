@@ -14,7 +14,7 @@
     <li>
       <%= section.title %>
       <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-primary btn-xs' %>
-      
+     </li> 
       <ul>
         <% section.lessons.each do |lesson| %>
           <li><b><%= lesson.title %></b>
@@ -22,8 +22,8 @@
           <%= lesson.subtitle %>
           </li>
         <% end %>
-        <br class='clr' />
-    </li>
+      </ul>
+        <br class='clr' />    
   <% end %>
   </ul>
 </div>
