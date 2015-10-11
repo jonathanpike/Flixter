@@ -42,8 +42,8 @@ gem 'carrierwave'
 # User Figaro to store credentials
 gem 'figaro'
 
-# Use Fog for S3
-gem 'fog'
+# Use carrierwave-aws for S3
+gem 'carrierwave-aws'
 
 # Use MiniMagick for Image Manipulation
 gem 'mini_magick'
