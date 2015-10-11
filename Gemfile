@@ -45,6 +45,9 @@ gem 'figaro'
 # Use Fog for S3
 gem 'fog'
 
+# Use MiniMagick for Image Manipulation
+gem 'mini_magick'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
