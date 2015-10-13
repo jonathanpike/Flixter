@@ -4,7 +4,14 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-sample: 
- title: Sample Course
- description: This is a course that teaches stuff
- cost: 5
+space_flight: 
+ title: Learn How to Fly in Space
+ description: Really learn how to fly a rocket to outer space
+ cost: 25
+ user: cooper
+
+cloning:
+ title: How to Clone Human Embryos
+ description: Make a colony for yourself on another planet!
+ cost: 0
+ user: amelia

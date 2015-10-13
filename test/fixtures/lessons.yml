@@ -4,8 +4,52 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+steering:
+ title: How to Steer in 3D
+ subtitle: It's harder than you think!
+ section: flying
+
+rockets:
+ title: Space is not all Fun and Rockets!
+ subtitle: It's actually just rockets!
+ section: flying
+
+star_charts:
+ title: Learn How the Stars Help You!
+ subtitle: They're your only landmark
+ section: navigation
+
+lost:
+ title: Lost in Space?
+ subtitle: You're pretty much stuck!
+ section: navigation
+
+effects:
+ title: The Effects of Cryo Sleep
+ subtitle: It's really not pretty...
+ section: cryo_sleep
+
+duration:
+ title: How long can you stay in Cryo Sleep?
+ subtitle: Longer than you could ever imagine!
+ section: cryo_sleep
+
+brain:
+ title: The Brain
+ subtitle: The epicenter of humanity
+ section: human_anatomy
+
+stomach:
+ title: The Stomach
+ subtitle: The real epicenter of humanity
+ section: human_anatomy
+
+cell_division:
+ title: Cell Division 
+ subtitle: How Humans Replicate
+ section: human_biology
+
+elements:
+ title: How many Elements are in the Human Body
+ subtitle: A lot!
+ section: human_biology

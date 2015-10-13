@@ -4,5 +4,26 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-sample: 
- title: Sample Section
+flying:
+ title: Flying Basics
+ course: space_flight
+
+navigation:
+ title: Navigation in Space
+ course: space_flight
+
+cryo_sleep:
+ title: Cryo Sleep Can be Fun
+ course: space_flight
+
+human_anatomy:
+ title: What Makes a Human
+ course: cloning 
+
+human_biology:
+ title: What Makes Humans Tick
+ course: cloning
+
+
+
+

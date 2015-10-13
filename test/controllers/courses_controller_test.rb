@@ -3,7 +3,7 @@ require 'test_helper'
 class CoursesControllerTest < ActionController::TestCase
 include Devise::TestHelpers
   setup do
-    @course = courses(:sample)
+    @course = courses(:space_flight)
   end
 
   test "Get index" do 

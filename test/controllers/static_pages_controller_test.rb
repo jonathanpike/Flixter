@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  include Devise::TestHelpers
+
+  test "Should get index" do
+    get :index
+    assert_response :success    
+  end
 end

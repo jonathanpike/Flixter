@@ -48,6 +48,9 @@ gem 'carrierwave-aws'
 # Use MiniMagick for Image Manipulation
 gem 'mini_magick'
 
+# Use Stripe for Credit Card Processing
+gem 'stripe'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
