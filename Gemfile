@@ -51,6 +51,9 @@ gem 'mini_magick'
 # Use Stripe for Credit Card Processing
 gem 'stripe'
 
+# Use ranked-model for ordering
+gem 'ranked-model'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
