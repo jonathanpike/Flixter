@@ -8,48 +8,58 @@ steering:
  title: How to Steer in 3D
  subtitle: It's harder than you think!
  section: flying
+ row_order: 0
 
 rockets:
  title: Space is not all Fun and Rockets!
  subtitle: It's actually just rockets!
  section: flying
+ row_order: 1
 
 star_charts:
  title: Learn How the Stars Help You!
  subtitle: They're your only landmark
  section: navigation
+ row_order: 0
 
 lost:
  title: Lost in Space?
  subtitle: You're pretty much stuck!
  section: navigation
+ row_order: 1
 
 effects:
  title: The Effects of Cryo Sleep
  subtitle: It's really not pretty...
  section: cryo_sleep
+ row_order: 0
 
 duration:
  title: How long can you stay in Cryo Sleep?
  subtitle: Longer than you could ever imagine!
  section: cryo_sleep
+ row_order: 1
 
 brain:
  title: The Brain
  subtitle: The epicenter of humanity
  section: human_anatomy
+ row_order: 0
 
 stomach:
  title: The Stomach
  subtitle: The real epicenter of humanity
  section: human_anatomy
+ row_order: 1
 
 cell_division:
  title: Cell Division 
  subtitle: How Humans Replicate
  section: human_biology
+ row_order: 0
 
 elements:
  title: How many Elements are in the Human Body
  subtitle: A lot!
  section: human_biology
+ row_order: 1

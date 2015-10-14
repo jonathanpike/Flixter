@@ -5,6 +5,7 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
 
   setup do
     @course = courses(:cloning)
+    @section = sections(:human_anatomy)
   end
 
   test "Get new" do 
@@ -54,5 +55,13 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to new_user_session_path
+  end
+
+  test "Reorder Sections" do 
+    sign_in users(:amelia)
+
+    assert_difference('Section.row_order') do
+      patch :update, id: @section.id, section: { row_order_position: 1 }
+    end
   end
 end

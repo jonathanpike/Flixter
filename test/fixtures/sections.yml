@@ -7,22 +7,27 @@
 flying:
  title: Flying Basics
  course: space_flight
+ row_order: 0
 
 navigation:
  title: Navigation in Space
  course: space_flight
+ row_order: 1
 
 cryo_sleep:
  title: Cryo Sleep Can be Fun
  course: space_flight
+ row_order: 2
 
 human_anatomy:
  title: What Makes a Human
  course: cloning 
+ row_order: 0
 
 human_biology:
  title: What Makes Humans Tick
  course: cloning
+ row_order: 1
 
 
 
