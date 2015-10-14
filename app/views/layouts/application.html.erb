@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-
+<div class="wrap">
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +42,7 @@
         <ul class="nav navbar-nav navbar-right">
           <% if not current_user %>
           <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <li><%= link_to 'Log In', new_user_session_path %></li>
+          <li><%= link_to 'Sign In', new_user_session_path %></li>
           <% end %>
           <% if current_user %>
           <li class="dropdown">
@@ -50,7 +50,7 @@
             <ul class="dropdown-menu">
               <li><%= link_to 'My Dashboard', dashboard_path %></li>
               <li role="separator" class="divider"></li>
-              <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+              <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
             </ul>
           </li>
           <% end %>
@@ -66,16 +66,49 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
-<%= yield %>
 
+<%= yield %>
+</div>
 
 <br class="clr" />
 
-<footer class="footer">
+<div class="footer">
   <div class="container">
-    <b>Teachers</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+    <div class="col-xs-12 col-sm-3">
+      <b>Teachers</b>
+      <br />
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <br />
+      <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>About</b>
+      <br />
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>Contact</b>
+      <br />
+      ken@thefirehoseproject.com
+      <br />
+      One Kendall Square
+      <br />
+      Cambridge MA, 02113
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Social</b>
+      <br />
+      <%= link_to 'http://www.github.com/jonathanpike' do %>
+        <%= image_tag 'github.png', :class => 'social-button' %>
+      <% end %>
+      <%= link_to 'http://www.twitter.com/jonathanpike' do %>
+        <%= image_tag 'twitter.png', :class => 'social-button' %>
+      <% end %>
+    </div>
   </div>
 </div>
 </body>
