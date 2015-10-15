@@ -60,6 +60,9 @@ gem 'stripe'
 # Use ranked-model for ordering
 gem 'ranked-model'
 
+# Use Kaminari for Pagination
+gem 'kaminari'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
