@@ -2,11 +2,11 @@
   <br />
   <div class="frosty col-xs-10 col-xs-offset-1 text-center">
     <br />
-    <h1>Learn Magic from the Pros</h1>
+    <h1>Learn something new today</h1>
     <br />
-    <h2>I'm an illusionist, Michael.</h2>
+    <h2>Choose from <%= @courses.count %> courses, all made by people like you</h2>
     <br />
-    <%= link_to 'Learn More',  courses_path, :class => 'btn btn-success' %>
+    <%= link_to 'Browse Courses',  courses_path, :class => 'btn btn-success' %>
     <br /><br />
   </div>
 </div>
@@ -14,15 +14,29 @@
 <br />
 <div class="col-xs-10 col-xs-offset-1 features text-center">
   <div class="col-sm-4">
-    <h3>Feature 1</h3>
-    
+    <br />
+    <h3>Teach Anything</h3>
+    <br />
+    <p class="blurb">Have a passion to share your knowledge?  Flixter makes it easy for you to create a course on any subject. Just sign up for an account and you can create your course in minutes.</p>
+
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 2</h3>
+    <br />
+    <h3>Learn Anywhere</h3>
+    <br />
+    <p class="blurb">Want to learn something new today?  Choose from <%= @courses.count %> created by passionate individuals who want to help you learn.  Our catalog of courses is being updated daily, so you'll never run out of opportunities to learn.</p>
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 3</h3>
+    <br />
+    <h3>Always Available</h3>
+    <br />
+    <p class="blurb">Unlike traditional classrooms, Flixter allows you to learn on-the-go, anywhere in the world.  Have a spare minute?  Learn something new!  And for Teachers, Flixter brings passionate learners directly to you.</p>
   </div>
+</div>
+<br class="clr" />
+
+<div class="col-xs-10 col-xs-offset-1 text-center signup">
+  <h3><%= link_to "Sign up today!", new_user_registration_path %> It's free, quick and easy.</h3>
 </div>
