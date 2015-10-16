@@ -14,4 +14,8 @@ class Lesson < ActiveRecord::Base
     end
     return lesson
   end
+
+  validates :title, :presence => true
+  validates :subtitle, :presence => true
+  validates :video, :presence => true
 end
