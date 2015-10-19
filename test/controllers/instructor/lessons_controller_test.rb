@@ -5,7 +5,8 @@ class Instructor::LessonsControllerTest < ActionController::TestCase
 
   setup do
     @course = courses(:cloning)
-    @section = sections(:human_anatomy)    
+    @section = sections(:human_anatomy)  
+    @lesson = lessons(:brain)  
     @file = Rack::Test::UploadedFile.new("#{Rails.root}/test/fixtures/files/small.mp4", "image/jpeg")
   end
 
@@ -35,6 +36,17 @@ class Instructor::LessonsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to new_user_session_path
+  end
+
+  test "Reorder Lessons" do 
+    sign_in users(:amelia)
+
+    first_lesson = Lesson.where(section_id: @lesson.section_id).order(row_order: :asc).first
+    assert_equal @lesson, first_lesson
+    patch :update, id: @lesson.id, lesson: { row_order_position: 1 }
+    last_lesson = Lesson.where(section_id: @lesson.section_id).order(row_order: :asc).last
+    assert_equal @lesson, last_lesson
+    assert_equal 2, Lesson.where(section_id: @lesson.section_id).count
   end
 
 end
