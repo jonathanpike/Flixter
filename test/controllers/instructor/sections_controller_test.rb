@@ -41,8 +41,11 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
   test "Reorder Sections" do 
     sign_in users(:amelia)
 
-    assert_difference('Section.row_order') do
-      patch :update, id: @section.id, section: { row_order_position: 1 }
-    end
+    first_section = Section.where(course_id: @section.course_id).order(row_order: :asc).first
+    assert_equal @section, first_section
+    patch :update, id: @section.id, section: { row_order_position: 1 }
+    last_section = Section.where(course_id: @section.course_id).order(row_order: :asc).last
+    assert_equal @section, last_section
+    assert_equal 2, Section.where(course_id: @section.course_id).count
   end
 end

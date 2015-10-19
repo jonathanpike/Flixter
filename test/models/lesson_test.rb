@@ -2,7 +2,8 @@ require 'test_helper'
 
 class LessonTest < ActiveSupport::TestCase
   test "Lesson saved with valid input" do
-    lesson = Lesson.create!(title: "Sample Lesson", subtitle: "This is a sample lesson", video: "small.mp4")
+    file = File.open("#{Rails.root}/test/fixtures/files/small.mp4")
+    lesson = Lesson.create!(title: "Sample Lesson", subtitle: "This is a sample lesson", video: file)
     assert lesson.valid?
   end
 
